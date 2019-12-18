@@ -89,4 +89,25 @@ function hideAdd() {
         x[0].classList.remove("visi");
         z.style.transform = "rotate(0deg)";
     }
+    function submitdata() {
+
+    //let current
+    //document.getElementById("main3");
+    var nname = document.getElementById("name");
+    var aamount = document.getElementById("amount");
+    var page = document.getElementsByClassName("content")
+
+    var table = document.getElementById("dynamictable");
+
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+
+    row.insertCell(0).innerHTML= nname.value;
+    row.insertCell(1).innerHTML= aamount.value;
+
+    document.getElementById('type') =
+    document.getElementById('main2') =
+    document.getElementById('display').innerHTML = 
+    document.getElementById('name').value; // testen
+    }
 }
